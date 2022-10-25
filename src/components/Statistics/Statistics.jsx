@@ -5,11 +5,15 @@ export const Statistics = ({title, stats}) => {
   return (<section className={slyles.statistics}>
       {title && <h2 className={slyles.title}>{ title }</h2>}
       <ul className={slyles.statList}>
-        {stats.map(item => <li key={ item.id } className={slyles.item}>
+        {stats.map(item => <li key={ item.id } className={slyles.item} style={{backgroundColor: getRandomHexColor()}}>
           <span className="label">{item.label}</span>
           <span className="percentage">{item.percentage}%</span></li>)}
       </ul>
 </section>);
+};
+
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
 
 Statistics.propTypes = {
