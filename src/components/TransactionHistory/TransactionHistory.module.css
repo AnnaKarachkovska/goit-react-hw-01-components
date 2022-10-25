@@ -1,0 +1,21 @@
+.transactionHistory {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 700px;
+    background-color: cornsilk;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.names {
+    line-height: 2;
+    background-color: bisque;
+}
+
+.item {
+    text-align: left;
+    width: 180px;
+    padding-left: 80px;
+}
